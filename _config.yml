@@ -1,0 +1,24 @@
+title: AI 每日精選
+description: "151 位頂尖 AI Builder 帳號 · 每日精選 5-8 則最實用內容"
+baseurl: "/ai-daily-digest"
+url: "https://wayne1838.github.io"
+theme: minima
+lang: zh-TW
+
+minima:
+  skin: dark
+  date_format: "%Y-%m-%d"
+  social_links:
+    - { platform: github, user_url: "https://github.com/wayne1838" }
+
+show_excerpts: true
+
+author:
+  name: Wayne
+
+header_pages:
+  - about.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
