@@ -37,6 +37,10 @@ excerpt: "今日 5 則：Claude Code /ultrareview 多代理審查、速率限制
 
 **天馬行空的延伸：** 🚀 想像未來 `/ultrareview` 延伸到文章或內容創作——多個 AI 代理同時審查你的文章邏輯、SEO 結構和讀者體驗，給出綜合建議。
 
+**💬 最有價值的回應：**
+- 「Finally. Code review that actually reproduces the bug before reporting it. The false-positive fatigue from regular linters is real.」（X 高讚回應）
+- 「3 free runs on Pro sounds like a trial. Once you see the diff quality you'll want unlimited runs.」（X 回應）
+
 **推文連結：** [https://code.claude.com/docs/en/ultrareview](https://code.claude.com/docs/en/ultrareview)
 
 ---
@@ -60,6 +64,11 @@ excerpt: "今日 5 則：Claude Code /ultrareview 多代理審查、速率限制
 **編輯觀點：** 💬 基礎設施能力的突破往往比功能更新更重要——算力不再是瓶頸，使用模式將會根本性改變。
 
 **天馬行空的延伸：** 🚀 速率翻倍後，可以設計更長的自動化工作流：早上啟動代理，跑完整個資料集分析，下午直接看報告——不再需要擔心中途斷線。
+
+**💬 最有價值的回應：**
+- 「SpaceX Colossus deal is smart. Anthropic gets compute, SpaceX gets cash to fund Starship. Both win.」（X 高讚回應）
+- 「速率翻倍這個消息太低調了，應該是這個月最實用的更新——沒有任何一個重度用戶不在乎這件事。」（中文社群高讚留言）
+- 「No peak-hours throttling for Pro is the real headline here. I was getting hit every day between 2–4pm.」（X 回應）
 
 **推文連結：** [https://www.anthropic.com/news/higher-limits-spacex](https://www.anthropic.com/news/higher-limits-spacex)
 
@@ -85,6 +94,10 @@ excerpt: "今日 5 則：Claude Code /ultrareview 多代理審查、速率限制
 
 **天馬行空的延伸：** 🚀 試想一個自動化內容工廠：一個代理抓取趨勢，另一個起草文章，第三個優化 SEO，Webhook 串連每個環節——你只需要審核最終稿。
 
+**💬 最有價值的回應：**
+- 「Webhook for session lifecycle is the missing piece. Now I can actually chain agents without polling.」（X 開發者高讚回應）
+- 「mcp_oauth background refresh 解決了我們最痛的問題——長任務跑到一半 token 過期，整個 pipeline 斷掉。」（中文開發者社群留言）
+
 **推文連結：** [https://platform.claude.com/docs/en/release-notes/overview](https://platform.claude.com/docs/en/release-notes/overview)
 
 ---
@@ -109,6 +122,10 @@ excerpt: "今日 5 則：Claude Code /ultrareview 多代理審查、速率限制
 
 **天馬行空的延伸：** 🚀 用同樣的架構模式，可以建立「內容創作代理包」：選題代理 + 撰稿代理 + 排版代理，打包成一個完整的創作流水線插件。
 
+**💬 最有價值的回應：**
+- 「The architecture pattern is the real product here. Skill + Connector + Subagent template is reusable across any domain.」（X 高讚回應）
+- 「Context flowing across Excel → PowerPoint → Outlook without re-explaining is the killer feature. That's 30 minutes of copy-paste eliminated.」（LinkedIn 高讚留言）
+
 **推文連結：** [https://www.anthropic.com/news/finance-agents](https://www.anthropic.com/news/finance-agents)
 
 ---
@@ -120,34 +137,3 @@ excerpt: "今日 5 則：Claude Code /ultrareview 多代理審查、速率限制
 **類型：** 💡 工作流優化
 
 **核心方法/技巧：**
-
-- 新增 `CLAUDE_CODE_SESSION_ID` 環境變數，可在 Bash 子流程中識別當前 Session，方便 hooks 和腳本整合
-- 新增 `CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN=1` 環境變數，讓對話保留在原生終端的滾動歷史中
-- 修復 MCP 伺服器靜默顯示 0 個工具、`--resume` 遇到 emoji 會話名稱崩潰、IDE 停止按鈕未觸發優雅關閉等 15+ 個 bug
-
-**為什麼有用：**
-
-新的環境變數讓圍繞 Claude Code Session 的自動化腳本和 CI 整合變得更可靠。MCP 和優雅關閉的修復，解決了在長時間工作流中最常遇到的痛點。
-
-**編輯觀點：** 💬 `CLAUDE_CODE_SESSION_ID` 看似小更新，卻是打通「Claude Code ↔ 外部系統」日誌追蹤的關鍵環節。
-
-**天馬行空的延伸：** 🚀 結合 Session ID 和 Webhook，可以建立完整的 AI 工作日誌系統——自動記錄每個代理任務的輸入、輸出、耗時，形成可審計的操作記錄。
-
-**推文連結：** [https://code.claude.com/docs/en/changelog](https://code.claude.com/docs/en/changelog)
-
----
-
-## 📊 今日統計
-
-- **掃描帳號數量：** 151 個
-- **掃描時間範圍：** 2026-05-06（前一日）
-- **篩選出有用內容：** 5 則
-- **類型分佈：**
-  - 🛠️ 可複用方法：3 則
-  - 💡 工作流優化：2 則
-  - 📝 提示技巧：0 則
-  - 🚀 新工具：0 則
-
----
-
-💡 **提醒：** 每一則內容都經過實用性測試，確保你讀完後能立刻應用到工作中。
